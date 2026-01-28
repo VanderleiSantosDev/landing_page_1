@@ -9,7 +9,7 @@ Uma landing page simples para estudos de HTML, CSS, JavaScript e Git.
 - HTML5
 - CSS3
 - JavaScript
-- Git & GitHub
+- Git
 
 ## Estrutura
 - `index.html` → página principal
