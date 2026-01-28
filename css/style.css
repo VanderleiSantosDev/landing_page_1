@@ -3,12 +3,18 @@
     padding:0;
 }
 
-body{
+
+/*DOCUMENTO*/
+
+.container{
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* altura mínima = altura da tela */
     margin: 0;
 }
+
+
+/*HEADER*/
 
 .header{
     display:grid;
@@ -19,6 +25,14 @@ body{
     height: 100px;
 }
 
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+
+/*MAIN */
+
 .grid {
     flex:1;
     display: grid;
@@ -28,6 +42,9 @@ body{
     grid-template-columns: 1fr; 
     gap:20px;
 }
+
+
+/*FOOTER*/
 
 .footer{
     display: grid;
@@ -46,8 +63,23 @@ body{
 }
 
 
+/*MOBILE MINIMO 1024PX */
+
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr; /* duas colunas */
+  }
+}
+
+
+/* MOBILE MINIMO 768PX */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* escondido por padrão */
+    flex-direction: column;
+  }
+  .menu-toggle {
+    display: block; /* mostra o botão hambúrguer */
   }
 }

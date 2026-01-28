@@ -1,8 +1,8 @@
-document.getElementById("cta-btn").addEventListener("click", function() {
-  document.getElementById("custom-alert").classList.remove("hidden");
+// APP LANDING PAGE 1
+
+// MENU
+document.querySelector(".menu-toggle").addEventListener("click", () => {
+  document.querySelector(".menu").classList.toggle("show");
 });
 
-document.getElementById("close-alert").addEventListener("click", function() {
-  document.getElementById("custom-alert").classList.add("hidden");
-});
 
