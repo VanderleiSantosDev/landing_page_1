@@ -1,0 +1,79 @@
+/* Folha de Estilo Css */
+
+
+/* Corpo */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Header */
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 50px 20px;
+}
+
+button {
+    background: white;
+    color: #4CAF50;
+    border: none;
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+#custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border: 2px solid #333;
+    color: black;
+    z-index: 1000;
+    text-align: center;
+}
+
+.hidden {
+    display:none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: black;
+    color:red;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Sessão 1 */
+
+section {
+    padding: 40px 20px;
+}
+
+
+
+/* Foother */
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
