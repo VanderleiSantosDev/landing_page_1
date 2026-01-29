@@ -1,8 +1,12 @@
 // APP LANDING PAGE 1
 
 // MENU
-document.querySelector(".menu-toggle").addEventListener("click", () => {
-  document.querySelector(".menu").classList.toggle("show");
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+
 });
 
 
