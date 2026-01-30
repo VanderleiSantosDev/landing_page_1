@@ -2,9 +2,9 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0px;
   height: 100%;
-  padding: 0;
+  padding: 0px;
 }
 
 
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 
 
@@ -25,6 +26,7 @@ body {
   align-items: center;
   background: red;
   height: 100px;
+  padding:20px;
 }
 
 /*MENU*/
@@ -32,11 +34,11 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+ 
+  padding: 10px 0px;
   color: #fff;
-  max-width: 1200px; /* limite de largura */
-  width: 100%;/* ocupa toda a largura disponível */
+  width: 1200px; /* limite de largura */
+  background: #1d1717;
 }
 
 .logo {
@@ -51,13 +53,13 @@ nav {
   padding: 0;
 }
 
-.menu li {
+.menu li{
   position: relative;
 }
 
-.menu a {
+.menu a{
   display: block;
-  padding: 5px 20px;
+  padding: 0px 10px 0px 10px;
   color: #fff;
   text-decoration: none;
   position: relative; /* necessário para o ::before */
@@ -70,6 +72,10 @@ nav {
   top: 25%;       /*controla onde começa*/ 
   height: 50%;    /*controla o tamanho vertical*/ 
   border-left: 1px solid #ccc;
+}
+
+.menu > li.m-ult-f a{
+  padding-right: 0px !important;
 }
 
 .menu-toggle {
@@ -88,8 +94,23 @@ nav {
 main {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+   
+}
+
+.primeira-section{
+  width: 100%;
+  height: auto;
+  background: green;
+  padding-top:20px;
+  
+}
+
+.segunda-section{
+  width: 100%;
+  height: auto;
+  background: green;
+ 
 }
 
 .grid {
@@ -97,19 +118,52 @@ main {
   display: grid;
   width: 100%;
   max-width: 1200px;
-  margin: 20px auto;
+  margin:auto;
+  padding-top:0px;
   grid-template-columns: 1fr;
-  gap: 20px;
+  
+
+}
+
+.grid-2,.grid-3 {
+
+  display: grid;
+  padding-top:20px;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: 1fr;
+  
 
 }
 
 .item {
-  background: red;
-  margin: 0px;
+  background: #fff;
   height: 100px;
-  padding: 20px;
+  padding:20px;
   text-align: left;
+  color: #1c1c1c;
+  border:1px solid #ddd;
 }
+
+  
+.primeira-section > .grid > .item{
+  margin:15px 15px 17px 15px;
+}
+.segunda-section > .grid-2 > .item{
+  margin:-2px 12px 5px 15px;
+}
+.segunda-section > .grid-3 > .item{
+  margin:10px 15px 7px 15px;
+}
+.primeira-section > .grid-4 > .item{
+  margin:7px 15px 27px 15px;
+}
+
+.primeira-section > .grid-4{
+  padding-bottom: 9px;
+}
+
+
 
 
 /*FOOTER*/
@@ -120,8 +174,9 @@ main {
   align-items: center;
   justify-items: center;
   background: red;
-  height: 100px;
+  min-height: 100px;
   margin-top: auto;
+  color:#fff;
 }
 
 
@@ -130,7 +185,20 @@ main {
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr; /* duas colunas */
+  }  
+  .primeira-section > .grid > .item{
+    margin:10px 15px 5px 15px;
   }
+  .segunda-section > .grid-2 > .item{
+    margin:5px 15px 0px 15px;
+  }
+  .segunda-section > .grid-3 > .item{
+    margin:10px 15px 0px 15px;
+  }
+  .primeira-section > .grid-4 > .item{
+    margin:10px 15px 30px 15px;
+  }
+
 }
 
 
