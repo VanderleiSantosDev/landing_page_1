@@ -1,17 +1,39 @@
 /*FOLHA DE ESTILO CSS*/
-* {
-  box-sizing: border-box;
-  margin:0px;
+
+
+* {margin:0px;
   padding:0px;
+  border:0;
+  box-sizing: border-box;}
+
+html, body{
+  background-color: #fff;
 }
 
-html,body {
-  height: 100%;}
+body{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight:300;
+  font-style:normal;
+  line-height: 1.0;
+  color: #17171b;
+  font-size: 15px;
+  /*Teste de Função*/
+  font-optical-sizing: auto;
+  font-variation-settings:"wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+ul, ol{
+  list-style:none;
+}
 
 
 /*DOCUMENTO*/
 
-.container {
+.container{
   display: flex;
   flex-direction: column;
   min-height: 100vh;}
@@ -22,7 +44,6 @@ html,body {
 .header {
   display: flex;
   justify-content: center;
-  /* centraliza o conteúdo */
   align-items: center;
   background: red;
   height: 100px;
@@ -51,7 +72,17 @@ html,body {
 
 .menu-social {
   width: 300px;
-  text-align: center;
+}
+
+.menu-social-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-social-icon li a{
+  color:#fff;
+  margin-right:20px;
 }
 
 .menu {
@@ -240,13 +271,7 @@ html,body {
   text-align: left;
 }
 
-.menu-social-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: flex-end;
-  width: 40%;
-}
+
 
 .menu-footer {
   display: flex;
@@ -280,6 +305,24 @@ html,body {
   padding: 20px;
 }
 
+.menu-social-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.menu-social-icon-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu-social-icon-footer li a{
+  color:#fff;
+  margin-left:20px;
+}
 
 /*MOBILE MiN 1024PX */
 
